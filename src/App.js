@@ -14,7 +14,7 @@ function App() {
   const [tagsArray, setTagsArray] = useState([]);
   const [suggestions, setSuggestions] = useState([]);
   const [originalMessages, setOriginalMessages] = useState([]); // Maintain the original messages here
-  const socket = io('http://localhost:5000', {
+  const socket = io('https://chat-server-xeyh.onrender.com', {
     transports: ["websocket", "polling"]
   });
   
